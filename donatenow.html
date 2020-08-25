@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<title>Blood Donation</title>
+	<link rel="icons" type="image/png" href="https://cdn3.iconfinder.com/data/icons/blood/154/blood-drop-medicine-red-512.png" sizes="16x16">
+	<meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">		<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+	<style type="text/css">
+		.color-white{
+			color:white;
+		}
+		.bg-blue{
+				background: #556DF5;
+			}
+		.bg-green{
+			background-color: #1BBC9B ;
+		}	
+		.bg-purple{
+			background-color: #9B58B5;
+		}
+		.m{
+			margin:150px auto; 
+		}	
+		.boxshadow{
+			box-shadow: 2px black;
+		}
+		.bg-orange{
+			background-color: #E77E23;
+		}
+		.bg-red{
+			background-color: #E84C3D;
+		}
+		.bg-gold{
+			background-color: #D9A81D;
+		}
+		.borderb{
+			border: 5rem solid#F1F1F1;
+		}
+		.bg-lightblack{
+			background-color: #231F20;
+		}
+		.circle{
+			border-radius: 50%; 
+		}
+		.img-fluid{
+			max-width: 5%;
+			height: auto;
+		}
+		.img-fluid1{
+			max-width: 100%;
+			height: auto;
+		}
+		.bg-white{
+			background-color: white;
+		}
+		.bg-lgrey{
+			background-color:#A0A1A3;
+		}
+		.fonts{
+			font-size: 26px;
+		}
+		.color-red{
+			color: #8D0000 !important;
+		}
+		.color-black{
+			color: black!important;
+		}
+		.boxshadow{
+			box-shadow: 2px solid black;
+		}
+		.color-ared{
+			color: red;
+		}
+		
+		.list{
+			list-style: none;
+		}
+		@media only screen and (max-width:1200px){
+			.fixed-bottom{
+				display: none;
+			}
+		}
+		@media only screen and (min-width:1200px){
+				.hel{
+					position: fixed;
+
+					right: 0;
+					left:0;
+					z-index: 1030;
+				}
+		} 
+		@media only screen and (max-width:768px){
+				.pad{
+
+					padding-bottom: 10px;
+				}
+		} 
+	</style>
+</head>
+<body>
+<div class="container-fluid p-0">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				  <a class="navbar-brand" href="index2.html">
+									    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRx2YO8M3_UIyqfQnyflb5wCYCranR0q9RTZF-3RsvqoA8maOa_&usqp=CAU" width="50" height="50" alt="" loading="lazy" class="circle">
+									</a>	
+									<a class="navbar-brand color-red" href="index2.html">Blood Donation</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				    <ul class="navbar-nav">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="donorlist.html">Donors List </a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="location.html">Location</a>
+				      </li>
+				      <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Services
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				          <a class="dropdown-item" href="donatenow.html">Donate Blood</a>
+				          <a class="dropdown-item" href="login2.html">My Donation</a>
+				          
+				        </div>
+				      </li>
+				      <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          LogIn
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				          <a class="dropdown-item" href="login2.html">LogIn</a>
+				          <a class="dropdown-item" href="signup2.html">SignUp</a>
+				          
+				        </div>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
+	</div>
+<div class="container">
+		<div class="row mt-5">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<h2 class="color-red mb-3" id="Donate">Donate now</h2>
+					<form name="dnform" method="post" action="save.php">
+					  <div class="form-group">
+					    <div class="row pb-3">
+						    <div class=" col-xl-6 col-md-6 col-sm- 12 col-12 pad">
+						      <input type="text" id="fname" ng-model="fname" required ng-pattern="/^[a-z ,.'-]+$/i" class="form-control" placeholder="First name" name="fname">
+						    <span ng-show="dnform.fname.$touched" class=" p-2 mt-1 rounded color-ared">
+						    	<span ng-show="dnform.fname.$error.required">This field is required</span>
+						    </span>
+						    <span ng-show="dnform.fname.$invalid">
+						    		<span ng-show="dnform.fname.$error.pattern" class="color-ared">Enter correct name.</span>
+						    	</span>
+		   
+						    </div>
+						    <div class="col-xl-6 col-md-6 col-sm- 12 col-12 pad ">
+						      <input type="text" id="lname" class="form-control" placeholder="Last name" name="lname">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleFormControlInput1">Email address</label>
+						    <input type="email" name="email" ng-model="email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" class="form-control" required id="exampleFormControlInput1" placeholder="name@example.com">
+						    <span ng-show="dnform.email.$touched" class=" p-2 mt-1 rounded color-ared">
+						    	<span ng-show="dnform.email.$error.required">This field is required</span>
+						    </span>
+						     <span ng-show="dnform.email.$invalid">
+						    		<span ng-show="dnform.email.$error.pattern" class="color-ared">Enter correct email.</span>
+						    	</span>
+						  </div>
+						  <div class="form-group">
+						  	<label for="inputnumber">Contact Number</label>
+						  	<div class="row">
+						  		<div class="col-3">
+						  	<input type="text"   class="form-control"  id="inputnumber" name="number" ng-model="number" required ng-pattern="/^([+(0-9)]{2,4})$/">
+						  	<span ng-show="dnform.number.$touched" class="p-2 mt-1 rounded color-ared">
+						    	<span ng-show="dnform.number.$error.required">*Required</span>
+						    </span>
+						    <span ng-show="dnform.number.$invalid">
+						    	<span ng-show="dnform.number.$error.pattern" class="color-ared">e.g. +91</span>
+						  </div>
+						  	<div class="col-9">
+						  	<input type="text"ng-model="mno" ng-pattern="/^([0-9]{10})$/" class="form-control" id="inputnumber" required  name="mno">
+						  	
+						  	<span ng-show="dnform.mno.$touched" class="p-2 mt-1 rounded color-ared">
+						    	<span ng-show="dnform.mno.$error.required">This field is required.</span>
+						    </span>
+						    <span ng-show="dnform.mno.$invalid">
+						    	<span ng-show="dnform.mno.$error.pattern" class="color-ared">Enter 10 digit mobile no.</span>
+						    </span>
+						    </div>
+						  	</div>
+						  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Address</label>
+					    <textarea class="form-control" id="inputAddress" placeholder="Enter Your address for communication" rows="3" name="address" ng-pattern="/^[a-z ,.#'-(0-9)]+$/i" required ng-model="address"></textarea>
+					    <span ng-show="dnform.address.$touched" class="p-2 mt-1 rounded color-ared">
+						    	<span ng-show="dnform.address.$error.required">This field is required.</span>
+						    </span>
+						    <span ng-show="dnform.address.$invalid">
+						    	<span ng-show="dnform.address.$error.pattern" class="color-ared">Enter correct address.</span>
+						    </span>
+					  </div>
+					  <div class="form-row">
+					      <label for="inputblood">Blood group</label>
+					      <select id="inputblood" class="form-control" required ng-model="inputblood"  name="inputblood" >
+					      	<option value="O+">O+</option>
+					      	<option value="O-">O-</option>
+					      	<option value="A+">A+</option>
+					      	<option value="A-">A-</option>
+					      	<option value="B+">B+</option>
+					      	<option value="B-">B-</option>
+					      	<option value="Ab+">Ab+</option>
+					      	<option value="AB-">AB-</option>
+					      </select>
+					     <span ng-show="dnform.inputblood.$touched" class="color-ared">
+					     	 <span ng-show="dnform.inputblood.$error.required">Select an option
+					      </span>
+					     </span>
+					    </div>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="inputCity">City</label>
+					      <input type="text" class="form-control" id="inputCity" ng-model="city" required name="city" ng-pattern="/^[a-z ,.'-]+$/i">
+					      <span ng-show="dnform.city.$touched" class=" p-2 mt-1 rounded color-ared">
+						    	<span ng-show="dnform.city.$error.required">This field is required</span>
+						    </span>
+						    <span ng-show="dnform.city.$invalid">
+						    		<span ng-show="dnform.city.$error.pattern" class="color-ared">Enter correct city.</span>
+						    	</span>
+		   
+					    </div>
+					    <div class="form-group col-md-4">
+						      <label for="inputState">State</label>
+						      <select id="inputState" class="form-control" ng-model="inputState" required name="inputState">
+						        <option value="Andhra Pradesh">Andhra Pradesh</option>
+								<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+								<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+								<option value="Assam">Assam</option>
+								<option value="Bihar">Bihar</option>
+								<option value="Chandigarh">Chandigarh</option>
+								<option value="Chhattisgarh">Chhattisgarh</option>
+								<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+								<option value="Daman and Diu">Daman and Diu</option>
+								<option value="Delhi">Delhi</option>
+								<option value="Lakshadweep">Lakshadweep</option>
+								<option value="Puducherry">Puducherry</option>
+								<option value="Goa">Goa</option>
+								<option value="Gujarat">Gujarat</option>
+								<option value="Haryana">Haryana</option>
+								<option value="Himachal Pradesh">Himachal Pradesh</option>
+								<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+								<option value="Jharkhand">Jharkhand</option>
+								<option value="Karnataka">Karnataka</option>
+								<option value="Kerala">Kerala</option>
+								<option value="Madhya Pradesh">Madhya Pradesh</option>
+								<option value="Maharashtra">Maharashtra</option>
+								<option value="Manipur">Manipur</option>
+								<option value="Meghalaya">Meghalaya</option>
+								<option value="Mizoram">Mizoram</option>
+								<option value="Nagaland">Nagaland</option>
+								<option value="Odisha">Odisha</option>
+								<option value="Punjab">Punjab</option>
+								<option value="Rajasthan">Rajasthan</option>
+								<option value="Sikkim">Sikkim</option>
+								<option value="Tamil Nadu">Tamil Nadu</option>
+								<option value="Telangana">Telangana</option>
+								<option value="Tripura">Tripura</option>
+								<option value="Uttar Pradesh">Uttar Pradesh</option>
+								<option value="Uttarakhand">Uttarakhand</option>
+								<option value="West Bengal">West Bengal</option>
+						      </select>
+						      <span ng-show="dnform.inputState.$touched" class="color-ared">
+					     	 <span ng-show="dnform.inputState.$error.required">Select an option
+					      </span>
+					     </span>
+						    </div>
+						    <div class="form-group col-md-2">
+						      <label for="inputZip">Zip</label>
+						      <input type="text" class="form-control" id="inputZip" ng-model="inputZip" name="inputZip" required ng-pattern="/^([0-9]{6})$/">
+						     <span ng-show="dnform.inputZip.$touched" class=" p-2 mt-1 rounded color-ared">
+						    	<span ng-show="dnform.inputZip.$error.required">*Required</span>
+						    </span>
+						    <span ng-show="dnform.inputZip.$invalid">
+						    		<span ng-show="dnform.inputZip.$error.pattern" class="color-ared">Enter correct Zip.</span>
+						    	</span>
+						    </div>
+						  </div>
+					  <div class="form-group">
+					    <label for="exampleFormControlTextarea1">Please mention your medical history?(If you have any disease.) </label>
+					    <textarea class="form-control" ng-model="disease" name="disease" ng-pattern="/^[a-z ,.'-]+$/i" id="exampleFormControlTextarea1" rows="3" required></textarea>
+					  	 <span ng-show="dnform.disease.$touched" class=" p-2 mt-1 rounded color-ared">
+						    	<span ng-show="dnform.disease.$error.required">This field is required</span>
+						    </span>
+						    <span ng-show="dnform.disease.$invalid">
+						    		<span ng-show="dnform.disease.$error.pattern" class="color-ared">Enter correct disease.</span>
+						    	</span>
+					  </div>
+					   <button type="submit" class="btn btn-primary" onsubmit= "return !(dnform.disease.$invalid) && !(dnform.fname.$invalid) && !(dnform.email.$invalid) && !(dnform.number.$invalid) && !(dnform.mno.$error.pattern) && !(dnform.address.$invalid) && !(dnform.city.$invalid) && !(dnform.inputZip.$invalid)">Submit</button>
+					   
+					</form>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+		<div class="row p-5 bg-light">
+			<div class=" p-3 col-xl-4 col-lg-3 col-md-6 col-sm-6 col-6 ">
+				<h3 class="color-red">Services</h3>
+				<ul class="list p-0">
+					<li ><a href="donatenow.html" class="color-black">Donate Now!</a></li>
+					<li><a href="login2.html" class="color-black">My donations</a></li>
+					<li><a href="location.html" class="color-black">Location</a></li>	
+				</ul>
+			</div>
+			<div class="  p-3 col-xl-4 col-lg-3 col-md-6 col-sm-6 col-6">
+				<h3 class="color-red">Join Our Community</h3>
+				<ul class="list p-0">
+					<li ><a href="signup2.html" class="color-black">Register</a></li>
+					<li><a href="login2.html" class="color-black">Already a member</a></li>	
+				</ul>
+
+			</div>
+			<div class=" p-3 col-xl-4 col-lg-3 col-md-12 col-sm-12 col-12">
+				<h3 class="color-red">Contact Us</h3>
+				<p>Kurukshtera University Health Centre<br>Kurukshtera <br>Haryana<br>Email:ak@gmail.com
+					<br>Mobile No:+91-9999999999
+				</p>	
+			</div>
+		</div>
+		<div class="row p-1">
+			<div class="col-12 text-center">
+				<span> All rights reserved | Designed by </span><a href="#">AkashDesign</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

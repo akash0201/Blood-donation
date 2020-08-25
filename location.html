@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood Donation</title>
+	<link rel="icons" type="image/png" href="https://cdn3.iconfinder.com/data/icons/blood/154/blood-drop-medicine-red-512.png" sizes="16x16">
+	<meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">		<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.color-white{
+			color:white;
+		}
+		.bg-blue{
+				background: #556DF5;
+			}
+		.bg-green{
+			background-color: #1BBC9B ;
+		}	
+		.bg-purple{
+			background-color: #9B58B5;
+		}
+		.m{
+			margin:150px auto; 
+		}	
+		.boxshadow{
+			box-shadow: 2px black;
+		}
+		.bg-orange{
+			background-color: #E77E23;
+		}
+		.bg-red{
+			background-color: #E84C3D;
+		}
+		.bg-gold{
+			background-color: #D9A81D;
+		}
+		.borderb{
+			border: 5rem solid#F1F1F1;
+		}
+		.bg-lightblack{
+			background-color: #231F20;
+		}
+		.circle{
+			border-radius: 50%; 
+		}
+		.img-fluid{
+			max-width: 5%;
+			height: auto;
+		}
+		.img-fluid1{
+			max-width: 100%;
+			height: auto;
+		}
+		.bg-white{
+			background-color: white;
+		}
+		.bg-lgrey{
+			background-color:#A0A1A3;
+		}
+		.fonts{
+			font-size: 26px;
+		}
+		.color-red{
+			color: #8D0000 !important;
+		}
+		.color-black{
+			color: black!important;
+		}
+		
+		.list{
+			list-style: none;
+		}
+		@media only screen and (max-width:1200px){
+			.fixed-bottom{
+				display: none;
+			}
+		}
+		@media only screen and (min-width:1200px){
+				.hel{
+					position: fixed;
+
+					right: 0;
+					left:0;
+					z-index: 1030;
+				}
+		} 
+		@media only screen and (max-width:768px){
+				.pad{
+
+					padding-bottom: 10px;
+				}
+		}
+		 
+	</style>
+</head>
+<body>
+<div class="container-fluid p-0">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				  <a class="navbar-brand" href="index2.html">
+									    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRx2YO8M3_UIyqfQnyflb5wCYCranR0q9RTZF-3RsvqoA8maOa_&usqp=CAU" width="50" height="50" alt="" loading="lazy" class="circle">
+									</a>	
+									<a class="navbar-brand color-red" href="index2.html">Blood Donation</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				    <ul class="navbar-nav">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="donorlist.html">Donors List </a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="location.html">Location</a>
+				      </li>
+				      <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Services
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				          <a class="dropdown-item" href="donatenow.html">Donate Blood</a>
+				          <a class="dropdown-item" href="login2.html">My Donation</a>
+				          
+				        </div>
+				      </li>
+				      <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          LogIn
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				          <a class="dropdown-item" href="login2.html">LogIn</a>
+				          <a class="dropdown-item" href="signup2.html">SignUp</a>
+				          
+				        </div>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
+
+	</div>
+	<div class="container text-center">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.3343823578207!2d76.8120272931237!3d29.956119311735264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e38b3b513bfd9%3A0xb80d463aa33c4523!2sUniversity%20Health%20Centre!5e0!3m2!1sen!2sin!4v1598175273985!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>"
+	</div>
+<div class="container-fluid">
+		<div class="row p-5 bg-light">
+			<div class=" p-3 col-xl-4 col-lg-3 col-md-6 col-sm-6 col-6 ">
+				<h3 class="color-red">Services</h3>
+				<ul class="list p-0">
+					<li ><a href="donatenow.html" class="color-black">Donate Now!</a></li>
+					<li><a href="login2.html" class="color-black">My donations</a></li>
+					<li><a href="location.html" class="color-black">Location</a></li>	
+				</ul>
+			</div>
+			<div class="  p-3 col-xl-4 col-lg-3 col-md-6 col-sm-6 col-6">
+				<h3 class="color-red">Join Our Community</h3>
+				<ul class="list p-0">
+					<li ><a href="signup2.html" class="color-black">Register</a></li>
+					<li><a href="login2.html" class="color-black">Already a member</a></li>	
+				</ul>
+
+			</div>
+			<div class=" p-3 col-xl-4 col-lg-3 col-md-12 col-sm-12 col-12">
+				<h3 class="color-red">Contact Us</h3>
+				<p>Kurukshtera University  Health Centre<br>Kurukshtera <br>Haryana<br>Email:ak@gmail.com
+					<br>Mobile No:+91-9999999999
+				</p>	
+			</div>
+		</div>
+		<div class="row p-1">
+			<div class="col-12 text-center">
+				<span> All rights reserved | Designed by </span><a href="#">AkashDesign</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
